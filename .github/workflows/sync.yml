@@ -44,8 +44,8 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fileName: '*'
       - name: Check for new release
-        if: steps.sync.outputs.has_new_commits == 'true'
-        run: echo "A new release was published"
+        # if: steps.sync.outputs.has_new_commits == 'true'
+        run: echo "A new release was published,steps.sync.outputs.has_new_commits=" + steps.sync.outputs.has_new_commits
       - name: Draft Release
         if: steps.sync.outputs.has_new_commits == 'true'
         uses: ncipollo/release-action@v1
