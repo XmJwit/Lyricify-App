@@ -35,7 +35,7 @@ jobs:
       # Display a sample message based on the sync output var 'has_new_commits'
       - name: download latest release asset files
         id: downloadrelease
-        if: ${{steps.sync.outputs.has_new_commits}} == 'true'
+        if: ${{steps.sync.outputs.has_new_commits}} == true
         uses: robinraju/release-downloader@v1.10
         with:
           # 当前私有库
@@ -44,10 +44,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           fileName: '*'
       - name: Check for new release
-        if: ${{steps.sync.outputs.has_new_commits}} == 'true'
+        if: ${{steps.sync.outputs.has_new_commits}} == true
         run: echo "A new release was published,steps.sync.outputs.has_new_commits=" + ${{steps.sync.outputs.has_new_commits}}
       - name: Draft Release
-        if: ${{steps.sync.outputs.has_new_commits}} == 'true'
+        if: ${{steps.sync.outputs.has_new_commits}} == true
         uses: ncipollo/release-action@v1
         with:
           draft: false
