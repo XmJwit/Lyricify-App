@@ -40,7 +40,7 @@ jobs:
           # 当前私有库
           repository: 'WXRIW/Lyricify-App'
           latest: true
-          token: ${{ secrets.MY_PERSON_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           fileName: '*'
       - name: Check for new release
         if: steps.sync.outputs.has_new_commits == 'false'
@@ -54,9 +54,9 @@ jobs:
           generateReleaseNotes: true  #自动生成发行说明。
           tag: "${{ github.ref_name }}"
           owner: "XmJwit"
-          repo: "XmJwit/Lyricify-App"
+          repo: "Lyricify-App"
           artifacts: '${{ github.workspace }}/*'
-          token: ${{ secrets.MY_PERSON_TOKEN  }}
+          token: ${{ secrets.GITHUB_TOKEN  }}
 
       - name: Sync check
         if: failure()
