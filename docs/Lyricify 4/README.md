@@ -31,7 +31,7 @@
 
 **注意：** 如需反馈或提问，对于 Lyricify 功能，请使用[官方认定的正确的名称](#lyricify-%E5%90%8D%E8%AF%8D)来描述。  
 
-Lyricify 4 是免费软件，如果你觉得 Lyricify 4 做的不错，则可以通过以下渠道支持：
+Lyricify 4 是免费软件，仅部分个性化设置为商店版独享。如果你觉得 Lyricify 4 做的不错，则可以通过以下渠道支持：
 - 在软件中，菜单-关于页里有打赏方式
 - 在 [Microsoft Store](https://apps.microsoft.com/store/detail/9P4WB75RHWCH?launch=true&mode=full) 中购买
 
@@ -420,7 +420,7 @@ Self-contained 版本包含 .NET 6.0 Desktop Runtime 运行时，仅建议那些
 如果您在中国大陆，建议检查您的科学上网工具是否正确设置了分流，是否能正常访问 `api.lyricify.app`。您还可以在设置中勾选 `不在 Lyricify 服务器请求中使用代理`。
 
 ## 启动 Lyricify 时提示错误
-启动 Lyricify 时提示出错（超时错误 或 Http 错误），并自动关闭。  
+启动 Lyricify 时提示出错（超时错误或 Http 错误），并自动关闭。  
 ### 导致原因
 网络连接状态不好，导致无法连接到 Spotify 服务器。与 Lyricify 无关。 
 ### 解决方案
@@ -431,7 +431,8 @@ accounts.spotify.com
 api.spotify.com
 ```
 如果可以连通，但仍然无法启动 Lyricify，请继续更换你的网络连接或服务提供商，直到可以连通为止。  
-Lyricify 可以保证的是，Lyricify 本身没有问题，这个问题是纯网络问题。
+如果你在中国大陆地区，且没有使用代理，则可以尝试开启代理后再试。  
+Lyricify 可以保证的是，Lyricify 本身没有问题，本问题为用户侧网络问题。
 
 ## 启动 Lyricify 后弹出消息框
 **注意：** 本问题仅在 4.2.11 或更早版本中出现。  
@@ -448,7 +449,7 @@ Lyricify 可以保证的是，Lyricify 本身没有问题，这个问题是纯�
 - 使用 [Microsoft Store 版本](https://apps.microsoft.com/store/detail/9P4WB75RHWCH?launch=true&mode=full)，其自动更新由 Microsoft 负责和管理，比 Lyricify 自带的更新更方便稳定，故强烈推荐使用。
 - 先手动更新至最新版，然后在 `设置` `高级` `更新` `更新来源` 中切换更新源至 `GitHub`。再下次更新发布后（建议开启网络代理），若可正常更新，则可正常使用；若仍然无法正常更新，则建议使用 [Microsoft Store 版本](https://apps.microsoft.com/store/detail/9P4WB75RHWCH?launch=true&mode=full)。
 
-## 无法在 曲目管理 中上传歌词
+## 无法在曲目管理中上传歌词
 提示 `你的上传请求被拒绝`。
 ### 解决方案
 如果您是新用户，请等待 24 小时再上传。
@@ -464,7 +465,7 @@ Lyricify 可以保证的是，Lyricify 本身没有问题，这个问题是纯�
 2. 需要播放音乐时，打开 Lyricify，然后在 Lyricify 中选择想要播放的歌曲即可。
 3. 注意：在 Lyricify 中点歌需要您的账户有 Spotify Premium 订阅。
 
-## 桌面歌词 或 灵动词岛 异常消失
+## “桌面歌词”或“灵动词岛”异常消失
 打开 `桌面歌词` 或 `灵动词岛` 后，闪一下就消失了，或是在最小化所有窗口后消失。
 ### 导致原因
 有全屏窗口处于前台。
@@ -563,6 +564,17 @@ Lyricify 为提升体验，需在歌曲开头以最小的影响进行时间轴�
 这首歌的歌词被错误的配置。
 ### 解决方案
 打开[曲目管理](#%E5%9C%A8%E5%93%AA%E9%87%8C%E5%8F%AF%E4%BB%A5%E6%89%93%E5%BC%80-%E6%9B%B2%E7%9B%AE%E7%AE%A1%E7%90%86)，检查“标题行”是否被错误的标记，可尝试通过双击 `是标题行` 进行标题行自动识别，完成后点击 `应用到主窗口`，检查歌词是否恢复。若恢复，则可以点击 `保存 (上传)` 将修改保存至 Lyricify 服务器。
+
+## 自动更新
+Lyricify 4 支持自动更新，其策略如下。
+### Microsoft Store 版本
+Microsoft Store 版本的自动更新由 Microsoft 负责。  
+Lyricify 4 的默认策略是在启动时自动检查更新，有更新时会请求 Microsoft Store 进行静默更新，并在用户关闭 Lyricify 4 或重启后完成更新。  
+你可以在 Lyricify 4 的设置中修改该策略。
+### 非 Microsoft Store 版本 (GitHub 版本)
+非 Microsoft Store 版本的自动更新由 Lyricify 4 负责。  
+Lyricify 4 会在启动时自动检查更新，有更新时会立即下载更新并完成安装，更新过程会自动重启 Lyricify 4。  
+Lyricify 4 默认开启自动更新，你可以在设置中修改该策略以停用普通更新。需要注意的是，版本过低时的强制更新不受该设置影响。
 
 ## 配置文件迁移
 如果你原先在另一台设备上使用 Lyricify 4，现在想要将配置文件迁移至新的设备，则可通过以下方法实现。
