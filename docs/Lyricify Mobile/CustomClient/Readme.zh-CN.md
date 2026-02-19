@@ -5,7 +5,7 @@
 </div>
 
 > ⚠️ **注意：**  
-> 万恶的 Spotify 近期停用了 Create app 申请通道，可能无法正常创建 app，请等待 Spotify 官方恢复申请。  
+> 2026 年 2 月 11 日之后创建的 Client，会导致 Lyricify Mobile 异常，无法正常使用，请暂时不要使用新创建的自定义 API Client，并等待后续进展。  
 > 如有任何问题或反馈可加 [QQ 群](https://qm.qq.com/q/QfdlJk8keI)或 [Telegram 群组](https://t.me/lyricify)。
 
 ## 自定义 Spotify API Client 的好处

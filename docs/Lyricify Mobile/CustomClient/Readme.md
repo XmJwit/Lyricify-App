@@ -6,7 +6,8 @@
 </div>
 
 > ⚠️ **Note:**  
-> Spotify has recently suspended the Create app application channel, so you may not be able to create an app normally. Please wait for Spotify to resume the application process.  
+> Clients created after February 11, 2026 will cause Lyricify Mobile to malfunction and become unusable.
+Please temporarily do not use newly created custom API Clients and wait for further updates.  
 > For any questions or feedback, please join the [Telegram group](https://t.me/lyricify).
 
 ## Benefits from customising Spotify API Client

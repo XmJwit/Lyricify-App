@@ -6,7 +6,9 @@
 </div>
 
 > ⚠️ **Note:**  
-> Spotify has recently suspended the Create app application channel, so you may not be able to create an app normally. Please wait for Spotify to resume the application process.  
+> Clients created after February 11, 2026 must use Lyricify 4 v4.3.48 or later.  
+> Due to Spotify removing a large number of APIs, earlier versions of Lyricify will no longer function properly.  
+> In addition, users who have already completed the configuration must update to version 4.3.48 or later before March 9, 2026.  
 > For any questions or feedback, please join the [Telegram group](https://t.me/lyricify).
 
 ## Benefits from customising Spotify API Client
