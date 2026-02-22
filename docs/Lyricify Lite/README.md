@@ -13,11 +13,13 @@
 | LyricEase | 完美 | 完美 |  |
 | Spotify | 完美 | 较好 | 建议使用 [Lyricify 4](https://apps.microsoft.com/store/detail/9P4WB75RHWCH?launch=true&mode=full) |
 | Apple Music | 时间轴精度低；曲目信息不全 | 一般 | 可优化时间轴<sup><a href="#ref5">5</a></sup> |
+| Tidal | 完美 | 较好 |  |
 | QQ 音乐 | 完美 | 较好 | 可由[插件](https://github.com/apoint123/QQMusic-ID-Injector)实现完美匹配 |
 | QQ 音乐 UWP | 一般，信息提供不稳定 | 较好 |  |
 | 网易云音乐 | 完美 | 完美 | 需安装额外的[插件](https://github.com/apoint123/inflink-rs/) |
 | 网易云音乐 UWP | 无时间轴信息 | 较好 |  |
 | 酷狗音乐 | 无时间轴信息 | 较好 |  |
+| 汽水音乐 | 完美 | 较好 |  |
 | Media Player | 时间轴完美；曲目信息取决于具体曲目 | 一般，取决于具体文件 | 原 Groove Music |
 | Foobar 2000 | 无时间轴信息；曲目信息取决于具体曲目 | 一般，取决于具体文件 | 时间轴可由[插件](https://github.com/ungive/foo_mediacontrol)提供 |
 | PotPlayer | 时间轴完美；曲目信息取决于具体文件名 | 较差，取决于文件名 |  |
