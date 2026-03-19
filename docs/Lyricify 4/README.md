@@ -1,3 +1,7 @@
+> [!CAUTION]
+> ## Lyricify 4 使用指南已迁移至 [docs.lyricify.app/lyricify-4](https://docs.lyricify.app/lyricify-4/)，旧版使用指南（本页面）不再维护。
+> ## Lyricify 4 User Guide has been migrated to [docs.lyricify.app/en/lyricify-4](https://docs.lyricify.app/en/lyricify-4/). This legacy page is no longer maintained.
+
 <div align="center">
 
 # Lyricify 4 使用指南
